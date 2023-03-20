@@ -118,6 +118,7 @@ Pod::Spec.new do |spec|
   spec.subspec 'WalletConnectRelay' do |ss|
     ss.source_files = 'Sources/WalletConnectRelay/**/*.{h,m,swift}'
     ss.dependency 'WalletConnectSwiftV2/WalletConnectKMS'
+    ss.dependency 'WalletConnectSwiftV2/WalletConnectJWT'
     ss.resource_bundles = {
       'WalletConnect_WalletConnectRelay' => [
          'Sources/WalletConnectRelay/PackageConfig.json'
